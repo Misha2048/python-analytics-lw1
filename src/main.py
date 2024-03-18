@@ -75,7 +75,7 @@ class App:
         return target
 
     @classmethod
-    def __print_matrix(cls, matrix: Iterable[Iterable[int]]):
+    def __print_matrix(cls, matrix: Iterable[Iterable[int]]) -> None:
         for row in matrix:
             logger.info(' '.join([str(elem) for elem in row]))
 

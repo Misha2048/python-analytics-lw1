@@ -8,7 +8,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y build-essential
 RUN pip3 install --upgrade pip
 
-COPY pyproject.toml poetry.lock ./
+COPY pyproject.toml ./
 
 RUN pip3 install poetry
 RUN poetry config virtualenvs.create false
