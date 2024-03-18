@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  main:
+    container_name: python-LW1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ${PWD}/file.log:/app/file.log
